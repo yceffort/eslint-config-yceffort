@@ -7,7 +7,7 @@
 ```json
 {
   "lint": "eslint '**/*.{js,ts,tsx}'",
-  "lint:fix": "npm run lint -- --fix"
+  "lint:fix": "npm run lint --fix"
 }
 ```
 
@@ -15,7 +15,7 @@
 
 ```javascript
 {
-  "extends": "@yceffort/eslint-config-yceffort",
+  "extends": "eslint-config-yceffort",
   "rules": {
     // your custom rules..
   }
@@ -28,7 +28,7 @@
 // .eslintrc 파일
 {
   "extends": [
-    "@yceffort/eslint-config-yceffort",    
+    "eslint-config-yceffort",    
     ...
   ],
   "rules": {
@@ -49,5 +49,5 @@
 `.prettierrc`
 
 ```
-"@yceffort/eslint-config-yceffort/prettierrc"
+"eslint-config-yceffort/prettierrc"
 ```
