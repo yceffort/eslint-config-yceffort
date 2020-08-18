@@ -1,6 +1,6 @@
 {
-  "name": "@yceffort/eslint-config-yceffort",
-  "version": "0.0.3",
+  "name": "eslint-config-yceffort",
+  "version": "0.0.1",
   "description": "eslint config by yceffort",
   "main": "index.js",
   "keywords": [
@@ -10,7 +10,10 @@
     "javascript",
     "typescript"
   ],
-  "repository": "https://github.com/yceffort/eslint-config-yceffort",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yceffort/eslint-config-yceffort.git"
+  },
   "author": "yceffort <yceffort@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -39,8 +42,5 @@
     "concurrently": "^5.3.0",
     "react": "^16.13.1",
     "typescript": "^3.9.7"
-  },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/yceffort/" 
   }
 }
