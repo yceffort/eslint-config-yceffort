@@ -28,7 +28,7 @@
 // .eslintrc 파일
 {
   "extends": [
-    "eslint-config-yceffort",    
+    "eslint-config-yceffort/typescript",
     ...
   ],
   "rules": {
