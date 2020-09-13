@@ -7,7 +7,7 @@
 ```json
 {
   "lint": "eslint '**/*.{js,ts,tsx}'",
-  "lint:fix": "npm run lint --fix"
+  "lint:fix": "npm run lint -- --fix"
 }
 ```
 
