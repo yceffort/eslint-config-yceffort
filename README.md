@@ -22,7 +22,7 @@
 }
 ```
 
-`.eslintrc` typescript
+`.eslintrc` in typescript package
 
 ```javascript
 // .eslintrc 파일
