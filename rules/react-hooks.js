@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'react-hooks/exhaustive-deps': 'error',
+    "react-hooks/exhaustive-deps": "error",
   },
-}
+};

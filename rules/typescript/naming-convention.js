@@ -1,63 +1,63 @@
 const commonExcludes = [
-  '_*',
-  '__html',
-  'Provider',
-  'Consumer',
-  'Component',
-  'Content-Type',
-]
+  "_*",
+  "__html",
+  "Provider",
+  "Consumer",
+  "Component",
+  "Content-Type",
+];
 const rules = [
-  'error',
+  "error",
   {
-    selector: 'default',
-    format: ['camelCase'],
-    leadingUnderscore: 'allow',
+    selector: "default",
+    format: ["camelCase"],
+    leadingUnderscore: "allow",
   },
   {
-    selector: 'memberLike',
-    modifiers: ['private'],
-    format: ['camelCase', 'UPPER_CASE'],
-    leadingUnderscore: 'allow',
+    selector: "memberLike",
+    modifiers: ["private"],
+    format: ["camelCase", "UPPER_CASE"],
+    leadingUnderscore: "allow",
   },
   {
-    selector: 'typeLike',
-    format: ['PascalCase'],
+    selector: "typeLike",
+    format: ["PascalCase"],
   },
   {
-    selector: 'variable',
-    format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+    selector: "variable",
+    format: ["camelCase", "UPPER_CASE", "PascalCase"],
   },
   {
-    selector: 'parameter',
-    format: ['camelCase', 'PascalCase'],
-    leadingUnderscore: 'allow',
+    selector: "parameter",
+    format: ["camelCase", "PascalCase"],
+    leadingUnderscore: "allow",
   },
   {
-    selector: 'property',
-    format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
-    leadingUnderscore: 'allow',
+    selector: "property",
+    format: ["camelCase", "PascalCase", "UPPER_CASE"],
+    leadingUnderscore: "allow",
   },
   {
-    selector: 'function',
-    format: ['camelCase', 'PascalCase'],
+    selector: "function",
+    format: ["camelCase", "PascalCase"],
   },
   {
-    selector: 'enumMember',
-    format: ['UPPER_CASE', 'PascalCase'],
+    selector: "enumMember",
+    format: ["UPPER_CASE", "PascalCase"],
   },
-]
+];
 
 module.exports = {
   rules,
   commonExcludes,
-  getRules({ regex = '', rules: customRules = [] }) {
-    const baseRules = [...rules, ...customRules]
+  getRules({ regex = "", rules: customRules = [] }) {
+    const baseRules = [...rules, ...customRules];
 
     if (!regex) {
-      return baseRules
+      return baseRules;
     } else {
       return baseRules.map((item) =>
-        typeof item !== 'string'
+        typeof item !== "string"
           ? {
               ...item,
               filter: {
@@ -65,8 +65,8 @@ module.exports = {
                 match: false,
               },
             }
-          : item,
-      )
+          : item
+      );
     }
   },
-}
+};
