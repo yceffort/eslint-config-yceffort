@@ -6,13 +6,16 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
-    "@typescript-eslint/ban-ts-comment": {
-      "ts-expect-error": "allow-with-description",
-      "ts-ignore": true,
-      "ts-nocheck": true,
-      "ts-check": false,
-      minimumDescriptionLength: 3,
-    },
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-expect-error": "allow-with-description",
+        "ts-ignore": true,
+        "ts-nocheck": true,
+        "ts-check": false,
+        minimumDescriptionLength: 3,
+      },
+    ],
     camelcase: "off",
     "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/explicit-function-return-type": "warn",
