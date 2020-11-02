@@ -1,9 +1,14 @@
 const { ESLint } = require("eslint");
 const config = require("../../../index");
+const {
+  rules: { curly },
+} = require("../../../rules/style");
 
 const RULE_ID = "curly";
 
-const eslint = new ESLint({ baseConfig: config });
+const eslint = new ESLint({
+  baseConfig: { ...config, rules: { curly },
+});
 
 describe("eslint-config-yceffort curly", function () {
   it("right curly", async function () {
