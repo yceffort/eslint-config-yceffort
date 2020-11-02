@@ -7,7 +7,7 @@ const {
 const RULE_ID = "curly";
 
 const eslint = new ESLint({
-  baseConfig: { ...config, rules: { curly },
+  baseConfig: { ...config, rules: { curly }},
 });
 
 describe("eslint-config-yceffort curly", function () {
