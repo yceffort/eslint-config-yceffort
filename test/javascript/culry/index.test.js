@@ -7,7 +7,7 @@ const {
 const RULE_ID = "curly";
 
 const eslint = new ESLint({
-  baseConfig: { ...config, rules: { curly }},
+  baseConfig: { ...config, rules: { curly } },
 });
 
 describe("eslint-config-yceffort curly", function () {
@@ -18,7 +18,7 @@ describe("eslint-config-yceffort curly", function () {
       (message) => message.ruleId === RULE_ID
     );
 
-    expect(errors).toBe(false);
+    expect(!errors).toBe(true);
   });
 
   it("wrong curly", async function () {
@@ -28,6 +28,6 @@ describe("eslint-config-yceffort curly", function () {
       (message) => message.ruleId === RULE_ID
     );
 
-    expect(errors).toBe(true);
+    expect(!errors).toBe(false);
   });
 });
