@@ -1,0 +1,6 @@
+{
+  "extends": ["./index"],
+  "env": {
+    "jest": true
+  }
+}

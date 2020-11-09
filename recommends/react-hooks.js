@@ -1,8 +1,7 @@
-  
 module.exports = {
-  plugins: ['react-hooks'],
+  plugins: ["react-hooks"],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
-}
+};
