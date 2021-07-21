@@ -12,7 +12,7 @@ module.exports = {
     node: true,
   },
 
-  plugins: ["import", "node", "promise", "standard"],
+  plugins: ["import", "node", "promise"],
 
   globals: {
     document: "readonly",
@@ -234,9 +234,9 @@ module.exports = {
     "node/no-deprecated-api": "error",
     "node/process-exit-as-throw": "error",
     "promise/param-names": "error",
-    "standard/no-callback-literal": "error",
-    "standard/array-bracket-even-spacing": "off",
-    "standard/computed-property-even-spacing": "off",
-    "standard/object-curly-even-spacing": "off",
+    "node/no-callback-literal": "error",
+    "array-bracket-even-spacing": "off",
+    "computed-property-even-spacing": "off",
+    "object-curly-even-spacing": "off",
   },
 };
