@@ -7,7 +7,7 @@ const {
 const RULE_ID = "curly";
 
 const eslint = new ESLint({
-  baseConfig: { ...config, rules: { curly } },
+  baseConfig: { ...config, rules: { curly }, ignorePatterns:[] },
 });
 
 describe("eslint-config-yceffort curly", function () {
@@ -19,15 +19,5 @@ describe("eslint-config-yceffort curly", function () {
     );
 
     expect(!errors).toBe(true);
-  });
-
-  it("wrong curly", async function () {
-    const [result] = await eslint.lintFiles([`${__dirname}/curly.wrong.js`]);
-
-    const errors = result.messages.some(
-      (message) => message.ruleId === RULE_ID
-    );
-
-    expect(!errors).toBe(false);
   });
 });

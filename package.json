@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yceffort",
-  "version": "0.0.6-canary.3",
+  "version": "1.0.0",
   "description": "eslint config by yceffort",
   "main": "index.js",
   "keywords": [
@@ -24,8 +24,8 @@
     "node": ">= 10"
   },
   "scripts": {
-    "lint": "eslint ./",
-    "lint:fix": "eslint ./ --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "jest"
   },
   "dependencies": {
